@@ -34,7 +34,10 @@ namespace AspNetWithAurelia
 
                 app.UseDeveloperExceptionPage();
                 app.UseCors(builder =>
-                    builder.WithOrigins("http://localhost:9000"));
+                    builder.WithOrigins("http://localhost:9000")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials());
             }
 
             var options = new DefaultFilesOptions();
