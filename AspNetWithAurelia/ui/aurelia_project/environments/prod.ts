@@ -1,5 +1,5 @@
 export default {
   debug: false,
   testing: false,
-  apiBaseUrl: 'https://live-url/api'
+  apiBaseUrl: 'https://live-url/api/'
 };
