@@ -5,28 +5,35 @@ import { HttpClient, HttpClientConfiguration } from 'aurelia-fetch-client';
 export class WebApiBase {
     protected _apiBase = env.default.apiBaseUrl;
     protected _httpClient = new HttpClient();
-    protected _log = LogManager.getLogger("WebApi");
+    protected _log: LogManager.Logger;
 
-    constructor() {
+    protected constructor(logName: string) {
+        this._log = LogManager.getLogger(logName);
+
+        this.initializeHttpClient();
     }
 
     initializeHttpClient() {
+        const log = this._log;
+
         this._httpClient.configure(config => {
             config
                 .withBaseUrl(this._apiBase)
                 .withDefaults({
-                    credentials: 'same-origin',
+                    credentials: 'include',
                     headers: {
                         'Accept': 'application/json'
-                    }
+                    },
+                    mode: 'cors'
+
                 })
                 .withInterceptor({
                     request(request) {
-                        this._log.debug(`Requesting ${request.method} ${request.url}`);
+                        log.debug(`Requesting ${request.method} ${request.url}`);
                         return request;
                     },
                     response(response) {
-                        this.log.debug(`Received ${response.status} ${response.url}`);
+                        log.debug(`Received ${response.status} ${response.url}`);
                         return response;
                     }
                 });

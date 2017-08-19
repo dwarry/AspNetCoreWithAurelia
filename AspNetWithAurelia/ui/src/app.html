@@ -1,3 +1,10 @@
 <template>
   <h1>${message}</h1>
+
+  <h2>Data from Values Controller:</h2>
+  <ul if.bind="values">
+    <li repeat.for="v of values">${v}</li>
+  </ul>
+
+  <p if.bind="errorMessage">${errorMessage}</p>
 </template>
