@@ -145,6 +145,27 @@
             "main": "aurelia-fetch-client",
             "path": "../node_modules/aurelia-fetch-client/dist/amd",
             "resources": []
+          },
+          {
+            "name": "aurelia-ux",
+            "main": "index",
+            "path": "../node_modules/aurelia-ux/dist/amd",
+            "resources": [
+              "button/ux-button-theme.css",
+              "checkbox/ux-checkbox-theme.css",
+              "chip-input/ux-chip-input-theme.css",
+              "chip-input/ux-chip-theme.css",
+              "chip-input/ux-tag-theme.css",
+              "effects/paper-ripple.css",
+              "form/ux-field-theme.css",
+              "form/ux-form-theme.css",
+              "icons/ux-icon-theme.css",
+              "input-info/ux-input-info-theme.css",
+              "input/ux-input-theme.css",
+              "list/ux-list-item-theme.css",
+              "list/ux-list-theme.css",
+              "textarea/ux-textarea-theme.css"
+            ]
           }
         ]
       }
