@@ -1,5 +1,7 @@
-import { Aurelia } from 'aurelia-framework'
+import { Aurelia } from 'aurelia-framework';
 import environment from './environment';
+
+import 'whatwg-fetch';
 
 export function configure(aurelia: Aurelia) {
   aurelia.use

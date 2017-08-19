@@ -14,7 +14,8 @@
     "bluebird": "^3.4.1",
     "font-awesome": "^4.7.0",
     "requirejs": "^2.3.2",
-    "text": "github:requirejs/text#latest"
+    "text": "github:requirejs/text#latest",
+    "whatwg-fetch": "^2.0.3"
   },
   "peerDependencies": {},
   "devDependencies": {

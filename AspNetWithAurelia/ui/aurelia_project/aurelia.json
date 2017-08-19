@@ -138,7 +138,8 @@
             "main": "aurelia-validation",
             "path": "../node_modules/aurelia-validation/dist/amd",
             "resources": []
-          }
+          },
+          "whatwg-fetch"
         ]
       }
     ]
