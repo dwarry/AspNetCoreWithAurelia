@@ -31,8 +31,21 @@ namespace AspNetWithAurelia
         {
             if (env.IsDevelopment())
             {
+
                 app.UseDeveloperExceptionPage();
+                app.UseCors(builder =>
+                    builder.WithOrigins("http://localhost:9000"));
             }
+
+            var options = new DefaultFilesOptions();
+
+            options.DefaultFileNames.Clear();
+
+            options.DefaultFileNames.Add("index.html");
+
+            app.UseDefaultFiles(options);
+
+            app.UseStaticFiles();
 
             app.UseMvc();
         }
