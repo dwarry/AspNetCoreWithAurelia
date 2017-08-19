@@ -259,3 +259,10 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# ui project files
+AspNetWithAurelia/ui/scripts/
+AspNetWithAurelia/ui/src/**/*.js
+AspNetWithAurelia/ui/src/**/*.js.map
+AspNetWithAurelia/ui/test/**/*.js
+AspNetWithAurelia/ui/test/**/*.js.map
