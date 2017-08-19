@@ -266,3 +266,6 @@ AspNetWithAurelia/ui/src/**/*.js
 AspNetWithAurelia/ui/src/**/*.js.map
 AspNetWithAurelia/ui/test/**/*.js
 AspNetWithAurelia/ui/test/**/*.js.map
+AspNetWithAurelia/wwwroot/index.html
+AspNetWithAurelia/wwwroot/scripts/**/*
+
