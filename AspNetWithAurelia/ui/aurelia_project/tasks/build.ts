@@ -2,7 +2,7 @@ import * as gulp from 'gulp';
 import transpile from './transpile';
 import processMarkup from './process-markup';
 import processCSS from './process-css';
-import prepareFontAwesome from './prepare-fontawesome';
+import copyNonpackagedFiles from './copy-nonpackaged-files';
 import copyFiles from './copy-files';
 import { build } from 'aurelia-cli';
 import * as project from '../aurelia.json';
@@ -13,7 +13,7 @@ export default gulp.series(
     transpile,
     processMarkup,
     processCSS,
-    prepareFontAwesome,
+    copyNonpackagedFiles,
     copyFiles
   ),
   writeBundles
