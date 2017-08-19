@@ -10,7 +10,7 @@ export default function copyBuildToWwwRoot() {
     .pipe(changedInPlace({ firstPass: true }))
     .pipe(gulp.dest(`${project.platform.output}/../../wwwroot/`));
 
-  const taskScripts = gulp.src(`${source}/*`)
+  const taskScripts = gulp.src(`${source}/**/*`)
     .pipe(changedInPlace({ firstPass: true }))
     .pipe(gulp.dest(`${project.platform.output}/../../wwwroot/scripts`));
 
