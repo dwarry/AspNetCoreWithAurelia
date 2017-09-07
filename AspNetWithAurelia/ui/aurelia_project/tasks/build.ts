@@ -5,6 +5,7 @@ import processCSS from './process-css';
 import copyNonpackagedFiles from './copy-nonpackaged-files';
 import copyFiles from './copy-files';
 import { build } from 'aurelia-cli';
+import copyBuildToWwwRoot from './copy-build-to-wwwroot';
 import * as project from '../aurelia.json';
 
 export default gulp.series(
@@ -16,7 +17,8 @@ export default gulp.series(
     copyNonpackagedFiles,
     copyFiles
   ),
-  writeBundles
+  writeBundles,
+  copyBuildToWwwRoot
 );
 
 function readProjectConfiguration() {
