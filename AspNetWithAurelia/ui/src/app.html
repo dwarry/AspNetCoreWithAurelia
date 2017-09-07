@@ -8,6 +8,9 @@
       <li repeat.for="v of values">${v}</li>
     </ul>
 
-    <p if.bind="errorMessage">${errorMessage}</p>
+    <div class="alert alert-danger" role="alert" if.bind="errorMessage">
+      ${errorMessage}
+    </div>
+
   </section>
 </template>
