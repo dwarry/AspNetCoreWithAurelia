@@ -1,0 +1,12 @@
+{
+    "author": "Dave Warry",
+    "classifications": [ "Web" ],
+    "name": "ASP.Net Code MVC + External Aurelia",
+    "identity": "boe.aumvc",
+    "shortName": "aumvc",
+    "tags": {
+        "language": "C#"
+    },
+    "sourceName": "AspNetWithAurelia",
+    "preferNameDirectory" : "true"
+}
